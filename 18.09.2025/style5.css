@@ -23,4 +23,16 @@ body{
             width: 20%;
         }
     }
+
+    main{
+
+    }
+    
+    footer{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background: #7DA453;
+        color: white;
+    }
 }
