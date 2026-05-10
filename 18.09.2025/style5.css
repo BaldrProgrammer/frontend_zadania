@@ -25,9 +25,19 @@ body{
     }
 
     main{
+        padding: 7px;
+        .contaiter {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
 
+            .yacheika{
+            background: #AED581;
+            height: 100px;
+        }
+        }
     }
-    
+
     footer{
         height: 60px;
         display: flex;
