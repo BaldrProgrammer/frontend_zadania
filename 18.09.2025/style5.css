@@ -26,21 +26,34 @@ body{
 
     main{
         padding: 7px;
+        h5{
+            text-align: center;
+        }
+
         .contaiter {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             gap: 10px;
 
             .yacheika{
-            background: #AED581;
-            height: 100px;
-        }
+                background: #AED581;
+                height: 100px;
+                border: 1px #7DA453;
+            }
+            .yacheika:hover{
+                background: #7DA453;
+                color: white;
+                height: 100px;
+                border: 1px #7DA453;
+            }
+
         }
     }
 
     footer{
         height: 60px;
         display: flex;
+        padding-left: 5px;
         align-items: center;
         background: #7DA453;
         color: white;
