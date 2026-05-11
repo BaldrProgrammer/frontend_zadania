@@ -38,15 +38,15 @@ body{
             .yacheika{
                 background: #AED581;
                 height: 100px;
-                border: 1px #7DA453;
-            }
-            .yacheika:hover{
-                background: #7DA453;
-                color: white;
-                height: 100px;
-                border: 1px #7DA453;
-            }
+                border: 1px solid #7DA453;
 
+                &:hover{
+                    background: #7DA453;
+                    color: white;
+                    height: 100px;
+                    border: 1px #7DA453;
+                }
+            }
         }
     }
 
