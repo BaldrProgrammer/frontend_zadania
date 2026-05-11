@@ -25,5 +25,10 @@ for(let i = 1; i <= 31; i++){
 }
 
 button.addEventListener('click', ()=>{
-    selected.querySelector('p').textContent = input.value
+    if (selected){
+        selected.querySelector('p').textContent = input.value
+    }
+    else{
+        window.alert("выбери день долбаеб")
+    }
 })
