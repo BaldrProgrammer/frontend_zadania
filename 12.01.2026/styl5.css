@@ -3,14 +3,15 @@ body{
     padding: 0;
     font-family: 'sans-serif';
 
-    h2{
+    h2, p{
             margin: 0;
-        }
+    }
 
     header{
         height: 100px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background: black;
         color: white;
         padding-right: 200px;
@@ -28,6 +29,23 @@ body{
     main{
         background: Linen;
         color: #222;
+        padding: 20px;
+        height: 75.2vh;
+
+        .main_content{
+            margin-bottom: 50px;
+        }
+
+        .main_content_table{
+            margin: 40px;
+            width: 30%;
+
+            td{
+                text-align: center;
+                padding: 30px;
+                background: lightblue;
+            }
+        }
     }
     footer{
         height: 100px;
