@@ -1,13 +1,40 @@
 body{
     margin: 0;
     padding: 0;
-    header{
+    font-family: 'sans-serif';
 
+    h2{
+            margin: 0;
+        }
+
+    header{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        background: black;
+        color: white;
+        padding-right: 200px;
+        nav ul li{
+            display: inline-block;
+            margin: 2px;
+
+            a{
+                color: #aaa;
+                text-decoration: none;
+
+            }
+        }
     }
     main{
-
+        background: Linen;
+        color: #222;
     }
     footer{
-
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        color: white;
     }
 }
