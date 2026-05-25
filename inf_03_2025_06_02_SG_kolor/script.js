@@ -1,7 +1,7 @@
 const input = document.querySelector('#add_task_I')
 const inputButton = document.querySelector('#add_task_B')
-const done = document.querySelector('.element_button')
 const ul = document.querySelector('#inside_main')
+let done = document.querySelectorAll('.element_button')
 
 inputButton.addEventListener('click', ()=>{
     let text = input.value
@@ -24,4 +24,20 @@ inputButton.addEventListener('click', ()=>{
     li.appendChild(p)
     li.appendChild(button)
     ul.appendChild(li)
+
+    done = document.querySelectorAll('.element_button')
+    done.forEach((doneE)=>{
+    doneE.addEventListener('click', (e)=>{
+    let p = e.currentTarget.parentElement.querySelector('p')
+    p.style.textDecoration = 'line-through'
+    })
+})
+
+})
+
+done.forEach((doneE)=>{
+    doneE.addEventListener('click', (e)=>{
+    let p = e.currentTarget.parentElement.querySelector('p')
+    p.style.textDecoration = 'line-through'
+    })
 })
