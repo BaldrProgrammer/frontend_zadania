@@ -15,7 +15,7 @@ body {
             width: 80%;
             height: 50px;
             color: white;
-            background: mediumpurple;
+            background-color: mediumpurple;
             text-align: center;
             text-shadow: 4px 4px dimgray;
         }
@@ -33,9 +33,31 @@ body {
             justify-content: center;
             height: 450px;
             width: 80%;
-            background: thistle;
-            .inside_main{
-
+            background-color: thistle;
+            #inside_main{
+                font-size: 25px;
+                margin: 40px auto;
+                width: 70%;
+                border: 2px solid mediumpurple;
+                .element_of_list, .element_of_list_P {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    height: 30px;
+                    button {
+                        color: white;
+                        background-color: mediumpurple;
+                        height: 30px;
+                        border: none;
+                    }
+                }
+                .element_of_list:hover, .element_of_list_P:hover {
+                    background-color: lavender;
+                }
+                .element_of_list_P {
+                    background-color: #DDCADD;
+                }
             }
         }
         footer {
