@@ -4,7 +4,7 @@ const tr1 = document.querySelector('#tr1')
 const tr2 = document.querySelector('#tr2')
 
 
-button.addEventListener('click', ()=>{
+button.addEventListener('click', () => {
     value = input.value
 
     tr1.querySelector('td').style.background = `hsl(${value}, 100%, 50%)`
