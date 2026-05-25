@@ -5,7 +5,6 @@ const ul = document.querySelector('#inside_main')
 
 inputButton.addEventListener('click', ()=>{
     let text = input.value
-    text.clear()
 
     let li = document.createElement('li')
     if (ul.children.length % 2 === 0){
@@ -15,17 +14,14 @@ inputButton.addEventListener('click', ()=>{
         li.setAttribute('class', 'element_of_list_P')
     }
 
-    let p = document.createElement('li')
-    let button = document.createElement('li')
+    let p = document.createElement('p')
+    let button = document.createElement('button')
     p.setAttribute('class', 'element_p')
+    p.textContent = text
     button.setAttribute('class', 'element_button')
+    button.textContent = 'Wykonane'
 
-    // <li class="element_of_list_P">
-    //                     <p class="element_p">
-    //                         Zakupy
-    //                     </p>
-    //                     <button type="button" class="element_button">
-    //                         Wykonane
-    //                     </button>
-    //                 </li>
+    li.appendChild(p)
+    li.appendChild(button)
+    ul.appendChild(li)
 })

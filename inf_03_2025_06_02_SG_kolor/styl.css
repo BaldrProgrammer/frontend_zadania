@@ -39,6 +39,7 @@ body {
                 margin: 40px auto;
                 width: 70%;
                 border: 2px solid mediumpurple;
+                overflow-y: auto;
                 .element_of_list, .element_of_list_P {
                     display: flex;
                     justify-content: space-between;
