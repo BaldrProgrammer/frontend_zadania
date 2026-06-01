@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #FCE4EC;
+
+    header, footer {
+        color: white;
+        background-color: #880E4F;
+        padding: 10px;
+        letter-spacing: 20px;
+    }
+}
