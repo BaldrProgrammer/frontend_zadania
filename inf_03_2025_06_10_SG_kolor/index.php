@@ -26,10 +26,24 @@
         </table>
     </section>
     <section class="right">
+        <form action="#" method="post">
+            <h2>
+                Zapisy na kursy
+            </h2>
+            <label for="input_name">Imię</label>
+            <input id="input_name">
+            <label for="input_surname">Nazwisko</label>
+            <input id="input_surname">
+            <label for="input_age">Wiek</label>
+            <input id="input_age">
+            <label for="select_course_type">Rodzaj kursu</label>
+            <select id="select_course_type">
 
+            </select>
+        </form>
     </section>
 </main>
 <footer>
-
+    <p>Stronę wykonał: нихуя блять не фронтэнд</p>
 </footer>
 </body>
