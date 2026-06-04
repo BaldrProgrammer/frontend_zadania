@@ -9,6 +9,14 @@ $conn = mysqli_connect($HOST, $USER, $PASSWORD, $DB_NAME);
 if (!$conn){
     die("blad polaczenia" . mysqli_connect_error());
 }
+
+$issent = "";
+if (isset($_POST['add_data_btn'])){
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $age = $_POST['age'];
+    $issent = $surname;
+}
 ?>
 
 
@@ -54,11 +62,11 @@ if (!$conn){
                 Zapisy na kursy
             </h2>
             <label for="input_name">Imię</label>
-            <input id="input_name">
+            <input type="text" id="input_name" name="name">
             <label for="input_surname">Nazwisko</label>
-            <input id="input_surname">
+            <input type="text" id="input_surname" name="surname">
             <label for="input_age">Wiek</label>
-            <input id="input_age">
+            <input type="text" id="input_age" name="age">
             <label for="select_course_type">Rodzaj kursu</label>
             <select id="select_course_type">
                 <?php
@@ -70,7 +78,8 @@ if (!$conn){
                 }
                 ?>
             </select>
-            <button type="submit">Dodaj dane</button>
+            <button type="submit" name="add_data_btn">Dodaj dane</button>
+            <p><?php echo $issent; ?></p>
         </form>
     </section>
 </main>
