@@ -1,2 +1,3 @@
 1. select kod, nazwa, cena from kursy order by cena desc;
 2. select nazwa from kursy;
+3. insert into uczestnicy(imie, nazwisko, wiek) values("Tadeusz", "Wysocki", 36);
