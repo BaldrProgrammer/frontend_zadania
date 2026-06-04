@@ -1,3 +1,4 @@
 1. select kod, nazwa, cena from kursy order by cena desc;
 2. select nazwa from kursy;
 3. insert into uczestnicy(imie, nazwisko, wiek) values("Tadeusz", "Wysocki", 36);
+4. select nazwa, count(*) from kursy join kursy_uczestnicy on kursy_uczestnicy.kod_kursu=kursy.kod group by kursy.kod;
