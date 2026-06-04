@@ -9,8 +9,6 @@ $conn = mysqli_connect($HOST, $USER, $PASSWORD, $DB_NAME);
 if (!$conn){
     die("blad polaczenia" . mysqli_connect_error());
 }
-
-$conn->close();
 ?>
 
 
@@ -35,9 +33,18 @@ $conn->close();
             </tr>
             </thead>
             <tbody>
-            <tr>
+                <?php
+                $SQL = 'select kod, nazwa, cena from kursy order by cena desc;';
+                $result = mysqli_query($conn, $SQL);
 
-            </tr>
+                while ($row = $result->fetch_row()){
+                    echo '<tr>';
+                    echo "<td><img src='zalacznik/$row[0].jpg' alt='kurs' width='150px' height='150px'></td>";
+                    echo "<td>$row[1]</td>";
+                    echo "<td>$row[2]</td>";
+                    echo '</tr>';
+                }
+                ?>
             </tbody>
         </table>
     </section>
