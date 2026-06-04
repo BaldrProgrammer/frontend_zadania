@@ -1,1 +1,2 @@
 1. select kod, nazwa, cena from kursy order by cena desc;
+2. select nazwa from kursy;
