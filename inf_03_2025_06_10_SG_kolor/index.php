@@ -38,8 +38,8 @@
             <input id="input_age">
             <label for="select_course_type">Rodzaj kursu</label>
             <select id="select_course_type">
-
             </select>
+            <button type="submit">Dodaj dane</button>
         </form>
     </section>
 </main>

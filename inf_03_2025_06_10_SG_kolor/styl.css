@@ -11,4 +11,32 @@ body {
         padding: 10px;
         letter-spacing: 20px;
     }
+
+    main {
+        display: flex;
+
+        .left {
+            width: 50%;
+            height: 600px;
+            overflow-y: scroll;
+        }
+
+        .right {
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input, button, select {
+                    width: 70%;
+                    margin: 5px;
+                }
+            }
+            color: white;
+            background-color: #880E4F;
+            width: 40%;
+            height: 500px;
+            margin: 35px;
+            box-shadow: 10px 10px 15px DimGray;
+        }
+    }
 }
