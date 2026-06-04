@@ -1,3 +1,19 @@
+<?php
+$HOST = '127.0.0.1';
+$USER = 'root';
+$PASSWORD = null;
+$DB_NAME = 'szkolenia';
+
+$conn = mysqli_connect($HOST, $USER, $PASSWORD, $DB_NAME);
+
+if (!$conn){
+    die("blad polaczenia" . mysqli_connect_error());
+}
+
+$conn->close();
+?>
+
+
 <!DOCTYPE 'html'>
 <head>
     <meta lang="pl">
