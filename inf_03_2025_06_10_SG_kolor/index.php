@@ -15,7 +15,21 @@ if (isset($_POST['add_data_btn'])){
     $name = $_POST['name'];
     $surname = $_POST['surname'];
     $age = $_POST['age'];
-    $issent = $surname;
+
+    if ($name && $surname && $age){
+        $stmt = $conn->prepare('insert into uczestnicy(imie, nazwisko, wiek) values(?, ?, ?);');
+        $stmt->bind_param('ssi', $name, $surname, $age);
+        $is_done = $stmt->execute();
+        if ($is_done){
+            $issent = "Dane uczestnika $name $surname zostały dodane";
+        }
+        else {
+            $issent = "Wystepil blad";
+        }
+    }
+    else {
+        $issent = "Wprowadź wszystkie dane";
+    }
 }
 ?>
 
