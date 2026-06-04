@@ -61,6 +61,14 @@ if (!$conn){
             <input id="input_age">
             <label for="select_course_type">Rodzaj kursu</label>
             <select id="select_course_type">
+                <?php
+                $SQL = 'select nazwa from kursy;';
+                $result = mysqli_query($conn, $SQL);
+
+                while ($row = $result->fetch_row()){
+                    echo "<option>$row[0]</option>";
+                }
+                ?>
             </select>
             <button type="submit">Dodaj dane</button>
         </form>
