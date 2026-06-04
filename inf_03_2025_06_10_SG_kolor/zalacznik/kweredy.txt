@@ -1,0 +1,1 @@
+1. select kod, nazwa, cena from kursy order by cena desc;
