@@ -1,3 +1,6 @@
 -- 1
 select wzor, cena from tatuaze where kolor = 'czarny' and cena > 100 order by cena desc;
 
+-- 2
+select kolor, count(id) from tatuaze group by kolor;
+
