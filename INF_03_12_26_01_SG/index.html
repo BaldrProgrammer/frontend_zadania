@@ -6,32 +6,38 @@
   <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-  <header class="header1">
-    <img src="img/logo.png" height="300" alt="salon">
-  </header>
-  <header class="header2">
-    <h1>Studio Tatuażu</h1>
-  </header>
-  <aside>
-    <h3>Dodaj wzór</h3>
-    <label for="wzorI">Wzór:</label>
-    <input id="wzorI" type="file" accept=".png">
-    <label for="kolorS">Wzór:</label>
-    <select id="kolorS">
-      <option>Czerwony</option>
-      <option>Czarny</option>
-      <option>Zielony</option>
-      <option>Niebieski</option>
-    </select>
-    <label for="cenaI">Wzór:</label>
-    <input id="cenaI" type="number" accept=".png">
-    <button id="submit" type="button">Dodaj Wzór</button>
-  </aside>
-  <section>
-    <h2>Galeria</h2>
-    <img class="miniatury" src="img/smok.png" alt="smok.png">
-    <img class="miniatury" src="img/koliber.png" alt="koliber.png">
-  </section>
+  <div class="main">
+    <div class="left">
+      <header class="header1">
+        <img src="img/logo.png" height="300" alt="salon">
+      </header>
+      <aside>
+        <h3>Dodaj wzór</h3>
+        <label for="wzorI">Wzór:</label>
+        <input id="wzorI" type="file" accept=".png">
+        <label for="kolorS">Kolor:</label>
+        <select id="kolorS">
+          <option>Czerwony</option>
+          <option>Czarny</option>
+          <option>Zielony</option>
+          <option>Niebieski</option>
+        </select>
+        <label for="cenaI">Cena:</label>
+        <input id="cenaI" type="number" accept=".png">
+        <button id="submit" type="button">Dodaj Wzór</button>
+      </aside>
+    </div>
+    <div class="right">
+      <header class="header2">
+        <h1>Studio Tatuażu</h1>
+      </header>
+      <section>
+        <h2>Galeria</h2>
+        <img class="miniatury" src="img/smok.png" alt="smok.png">
+        <img class="miniatury" src="img/koliber.png" alt="koliber.png">
+      </section>
+    </div>
+  </div>
   <footer>
     <p>autor strony: 000000000</p>
   </footer>

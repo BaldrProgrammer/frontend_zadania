@@ -5,43 +5,62 @@
     font-style: normal;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Dancing Script", serif;
     font-size: 120%;
     text-align: center;
+    .main {
+        display: flex;
+        width: 100vw;
+        .left {
+            width: 30%;
+        }
+        .right {
+            width: 70%;
+        }
 
-    aside, .header1 {
-        width: 30%;
-        background-color: rosybrown;
-    }
+        aside, .header1 {
+            width: 30vw;
+            background-color: rosybrown;
+        }
 
-    aside {
+        aside {
             text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             height: 350px;
-    }
+        }
 
-    .header2 {
-        background-color: rosybrown;
-        width: 70%;
-        height: 100px;
-    }
+        .header2 {
+            background-color: rosybrown;
+            width: 70vw;
+            height: 100px;
+        }
 
-    section {
-        width: 70%;
-        height: 550px;
-        overflow: scroll;
-    }
+        section {
+            width: 70vw;
+            height: 550px;
+            overflow: scroll;
+        }
 
-    label {
-        line-height: 50px;
-    }
+        label {
+            line-height: 50px;
+        }
 
-    .miniatury {
-        width: 150px;
-        transition: width 1s ease;
-    }
-    .miniatury:hover {
-        background-color: bisque;
-        width: 200px;
+        .miniatury {
+            width: 150px;
+            transition: width 1s ease;
+        }
+
+        .miniatury:hover {
+            background-color: bisque;
+            width: 200px;
+        }
     }
 }
