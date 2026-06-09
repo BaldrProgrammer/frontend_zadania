@@ -9,4 +9,39 @@ body {
     font-family: "Dancing Script", serif;
     font-size: 120%;
     text-align: center;
+
+    aside, .header1 {
+        width: 30%;
+        background-color: rosybrown;
+    }
+
+    aside {
+            text-align: left;
+            height: 350px;
+    }
+
+    .header2 {
+        background-color: rosybrown;
+        width: 70%;
+        height: 100px;
+    }
+
+    section {
+        width: 70%;
+        height: 550px;
+        overflow: scroll;
+    }
+
+    label {
+        line-height: 50px;
+    }
+
+    .miniatury {
+        width: 150px;
+        transition: width 1s ease;
+    }
+    .miniatury:hover {
+        background-color: bisque;
+        width: 200px;
+    }
 }
