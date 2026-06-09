@@ -7,3 +7,5 @@ select kolor, count(id) from tatuaze group by kolor;
 -- 3
 select wzor, style.nazwa from tatuaze inner join style on tatuaze.style_id = style.id;
 
+-- 4
+update tatuaze set cena = cena*1.1 where kolor = 'czerwony';
