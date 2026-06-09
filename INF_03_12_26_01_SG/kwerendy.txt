@@ -4,3 +4,6 @@ select wzor, cena from tatuaze where kolor = 'czarny' and cena > 100 order by ce
 -- 2
 select kolor, count(id) from tatuaze group by kolor;
 
+-- 3
+select wzor, style.nazwa from tatuaze inner join style on tatuaze.style_id = style.id;
+
