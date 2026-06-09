@@ -1,0 +1,3 @@
+-- 1
+select wzor, cena from tatuaze where kolor = 'czarny' and cena > 100 order by cena desc;
+
